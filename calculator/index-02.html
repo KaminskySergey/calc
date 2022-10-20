@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <p><a href="/">На главную</a></p>
+
+    <button class="button" data-action="open-modal">Open calc</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <div class="cont-text">
+          <p class="text"></p>
+        </div>
+          <div class="buttons">
+            <button class="btn remove color-yellow">AC</button>
+            <button class="btn plus-minus color-yellow">+/-</button>
+            <button class="btn part color-yellow">%</button>
+            <button class="btn division color-blue">/</button>
+
+            <button class="btn seven" type="button">7</button>
+            <button class="btn eight" type="button">8</button>
+            <button class="btn nine" type="button">9</button>
+            <button class="btn mult color-blue">x</button>
+    
+            <button class="btn four" type="button">4</button>
+            <button class="btn five" type="button">5</button>
+            <button class="btn six" type="button">6</button>
+            <button class="btn minus color-blue" type="button">-</button>
+    
+            <button class="btn one" type="button">1</button>
+            <button class="btn two" type="button">2</button>
+            <button class="btn three" type="button">3</button>
+            <button class="btn plus color-blue" type="button">+</button>
+    
+            <button class="btn zero" type="button">0</button>
+            <button class="btn dot" type="button">.</button>
+            <button class="btn equals color-blue result" type="button">=</button>
+          </div>
+        
+        
+
+        <button type="button" class="btn-close" data-action="close-modal"></button>
+    
+    
+    
+    
+    
+    <script src="./modal.js" type="module"></script>
+    <script src="./calc-02.js"></script>
+</body>
+</html>

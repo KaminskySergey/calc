@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Мастерская: модальное окно</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <p><a href="/">На главную</a></p>
+
+    <button class="button" data-action="open-modal">Open calc</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <div class="cont-text">
+          <p class="text"></p>
+        </div>
+          <div class="buttons">
+            <button class="btn remove color-yellow" type="button">AC</button>
+            <button class="btn plus-minus color-yellow" type="button" data-operandum>+/-</button>
+            <button class="btn part color-yellow" type="button" data-operandum>%</button>
+            <button class="btn division color-blue" type="button" data-operandum>/</button>
+
+            <button class="btn seven" type="button" data-active="number">7</button>
+            <button class="btn eight" type="button" data-active="number">8</button>
+            <button class="btn nine" type="button" data-active="number">9</button>
+            <button class="btn mult color-blue" type="button" data-operandum>*</button>
+    
+            <button class="btn four" type="button" data-active="number">4</button>
+            <button class="btn five" type="button" data-active="number">5</button>
+            <button class="btn six" type="button" data-active="number">6</button>
+            <button class="btn minus color-blue" type="button" data-operandum>-</button>
+    
+            <button class="btn one" type="button" data-active="number">1</button>
+            <button class="btn two" type="button" data-active="number">2</button>
+            <button class="btn three" type="button" data-active="number">3</button>
+            <button class="btn plus color-blue" type="button" data-active="number">+</button>
+    
+            <button class="btn zero" type="button" data-active="number">0</button>
+            <button class="btn dot" type="button">.</button>
+            <button class="btn equals color-blue result" type="button">=</button>
+          </div>
+        
+        
+
+        <button type="button" class="btn-close" data-action="close-modal"></button>
+      </div>
+    </div>
+
+    <!-- <script src="./modal.js" type="module"></script>
+    <script src="./calc.js"></script> -->
+  </body>
+</html>
