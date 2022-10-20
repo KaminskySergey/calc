@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+body.show-modal .backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+  
+  body.show-modal .modal {
+    transform: scale(1);
+  }
+
+
+  .backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+  }
+
+
+
+  .modal {
+    padding: 20px;
+    border-radius: 20px;
+    height: 500px;
+    width: 350px;
+    min-height: 320px;
+    background-color: #000;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+    display: grid;
+  }
+  
+  
+  .cont-text{
+    height: 100px;
+    background-color: #fff;
+    
+    position: relative;
+    background-color: transparent;
+    
+  }
+  .text{
+    position: absolute;
+    right: 10px;
+    bottom: 25%;
+    font-size: 3rem;
+    color: #fff;
+    margin: 0;
+
+  }
+  .buttons{
+    display: grid;
+    grid-template-areas: 
+    "remove plus-minus part division"
+    "seven eight nine mult"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equals";
+    grid-gap: 15px;
+    justify-items: center;
+    flex: end;
+  }
+  .btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(31, 27, 27);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 250ms;
+    transform:  scale(1);
+  }
+  .btn:hover, .btn:focus {
+    background-color: rgb(57, 62, 62);
+    transform:  scale(1.1);
+  }
+  .color-yellow:hover, .color-yellow:focus{
+    background-color: rgb(85, 70, 19);
+  }
+  
+  .color-blue:hover, .color-blue:focus{
+    background-color: rgb(24, 14, 78);
+  }
+  .zero{
+  grid-area: zero;
+  width: 100%;
+  border-radius: 30px;
+  }
+  .color-yellow{
+    background-color: rgb(203, 164, 38);
+  }
+  .color-blue{
+    background-color: rgb(73, 73, 176);
+  }
+  
+  
+  
+  .btn-close{
+    display: none;
+  }
