@@ -99,4 +99,7 @@ remove.addEventListener('click', onClear);
 
 function onClear (evt){
     text.textContent = 0;
+    firstNum = '';
+    lastNum = '';
+    sign = '';
 }
